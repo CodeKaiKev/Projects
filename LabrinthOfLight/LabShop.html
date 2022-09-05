@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <title>LabShop</title>
+    
+    <script src="LabrinthOfLight.js"></script>
+    <link rel="stylesheet" href="LabrinthOfLight.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/3c45a94799.js" />
+    <script src="https://use.fontawesome.com/3c45a94799.js"></script>
+    <script src="LabrinthOfLight.js"></script>
+    <script type = "text/javascript">
+
+    function functionName() {  
+
+    alert("Welcome to the shopping section, if you see anything you like please select it and add it to the cart.");
+        document.getElementsByName("bodyA")[0].style.backgroundColor = "silver";
+        }
+
+    </script>
+</head>
+<body name="bodyA" style="align-items: center; justify-content: center;">
+    <div  name="Navigation">
+          
+           <img src="art.png" style="display:inline" class = "logo"  width = "27px"  onclick ="myWeb()"/>
+               <li style="display:inline"><a href="LabrinthOfLight.html">Gallery</a></li>
+               <li style="display:inline"><a href="LabShop.html" >Shop</a></li>
+               <li style="display:inline"><a href="LabAbout.html" >About</a></li>
+               
+               <li style="display:inline"><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+     </div>
+   
+    <h1 onclick = "functionName()">Labyrinth Shop</h1>
+    
+    <p style="color:whitesmoke"> Welcome, to the shop of the Gods of Greece. Please select the picture you would like to purchase, and the item will be added to your cart. Once you have finished, please click on the cart image to make your payment. - Regards Labrynth </p>
+    
+    
+           
+    <p>
+       
+       =
+       
+       
+        
+    </p>       
+    <div class="slider">
+       
+        <div class="slides">
+           
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+            <input type="radio" name="radio-btn" id="radio6">
+        
+            
+           
+            <!--Start of slides-->
+            <div class="slide first">
+                <img src="zeus.jpg" alt="" >
+            </div>
+            <div class="slide">
+                <img src="aphrodite.jpg" alt="" >
+            </div>
+            <div class="slide">
+                <img src="ares.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="Hestia.jpg" alt="" >
+            </div>
+            <div class="slide">
+                <img src="Athena.jpg" alt="" >
+            </div>
+            <div class="slide">
+                <img src="Apolloe.jpg" alt=""  >
+            </div>
+            <!--slide images end>
+            
+            <!--Automatic navigation start-->
+            <div class="navi-auto">  
+                <div class ="auto-btn1"></div>
+                <div class ="auto-btn2"></div>
+                <div class ="auto-btn3"></div>
+                <div class ="auto-btn4"></div>
+                <div class ="auto-btn5"></div>
+                <div class ="auto-btn6"></div>
+            </div>
+            <!--Automatic navigation end-->
+        </div>
+        
+        <!--Manual Navigation start-->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+            <label for="radio6" class="manual-btn"></label>
+        </div>
+        <!--Manual Navigation end-->
+    </div>
+    <!--image slider end-->
+    
+</body>
+</html>
