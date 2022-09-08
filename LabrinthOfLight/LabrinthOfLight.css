@@ -149,7 +149,9 @@ figcaption {
 }
 
 #radio6:checked ~ .first{
-    margin-left:-2400px;
+   
+    margin-left:-2600px;
 }
+
 
 

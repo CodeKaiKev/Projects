@@ -20,7 +20,7 @@
 
     </script>
 </head>
-<body name="bodyA" style="align-items: center; justify-content: center;">
+<body name="bodyA" style="align-items: center; justify-content: center; text-align: center;">
     <div  name="Navigation">
           
            <img src="art.png" style="display:inline" class = "logo"  width = "27px"  onclick ="myWeb()"/>
@@ -28,41 +28,42 @@
                <li style="display:inline"><a href="LabShop.html" >Shop</a></li>
                <li style="display:inline"><a href="LabAbout.html" >About</a></li>
                
-               <li style="display:inline"><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+               <li style="display:inline"><a href="LabCart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
      </div>
    
     <h1 onclick = "functionName()">Labyrinth Shop</h1>
     
     <p style="color:whitesmoke"> Welcome, to the shop of the Gods of Greece. Please select the picture you would like to purchase, and the item will be added to your cart. Once you have finished, please click on the cart image to make your payment. - Regards Labrynth </p>
-    
-    
            
-    <p>
-       
-       =
-       
-       
-        
-    </p>       
+    <p> </p>     
+      
+    <!-- This label refers to the name of the picture below it. Should change when new image is selected. -->
+    
+    <label id="photoGod" name="painH" style="color: aqua; border-width: thick;
+    border-style: solid; border-color: crimson; font-size: 17px; font-style: initial">Zeus - God of Thunder</label>
+     
+    <p></p>
+    
+      
     <div class="slider">
        
         <div class="slides">
            
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
-            <input type="radio" name="radio-btn" id="radio5">
-            <input type="radio" name="radio-btn" id="radio6">
+            <input type="radio" name="radio-btn" id="radio1" onclick="changeGodTitle(1)">
+            <input type="radio" name="radio-btn" id="radio2" onclick="changeGodTitle(2)">
+            <input type="radio" name="radio-btn" id="radio3" onclick="changeGodTitle(3)">
+            <input type="radio" name="radio-btn" id="radio4" onclick="changeGodTitle(4)">
+            <input type="radio" name="radio-btn" id="radio5" onclick="changeGodTitle(5)">
+            <input type="radio" name="radio-btn" id="radio6" onclick="changeGodTitle(6)">
         
             
            
             <!--Start of slides-->
-            <div class="slide first">
-                <img src="zeus.jpg" alt="" >
+            <div class="slide first" onclick="changeGodTitle(1)">
+                <img src="zeus.jpg" alt="">
             </div>
             <div class="slide">
-                <img src="aphrodite.jpg" alt="" >
+                <img src="aphrodite.jpg" alt="">
             </div>
             <div class="slide">
                 <img src="ares.jpg" alt="">
@@ -78,6 +79,7 @@
             </div>
             <!--slide images end>
             
+            
             <!--Automatic navigation start-->
             <div class="navi-auto">  
                 <div class ="auto-btn1"></div>
@@ -90,18 +92,21 @@
             <!--Automatic navigation end-->
         </div>
         
+        
         <!--Manual Navigation start-->
         <div class="navigation-manual">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
-            <label for="radio5" class="manual-btn"></label>
-            <label for="radio6" class="manual-btn"></label>
+            <label for="radio1" class="manual-btn" ></label>
+            <label for="radio2" class="manual-btn" ></label>
+            <label for="radio3" class="manual-btn" ></label>
+            <label for="radio4" class="manual-btn" ></label>
+            <label for="radio5" class="manual-btn" ></label>
+            <label for="radio6" class="manual-btn" ></label>
         </div>
         <!--Manual Navigation end-->
     </div>
     <!--image slider end-->
+    
+    <button onclick="addToCart()"> Purchase Item </button>
     
 </body>
 </html>
