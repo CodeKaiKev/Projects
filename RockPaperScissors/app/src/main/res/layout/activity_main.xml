@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#090808"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnQuit"
+        android:layout_width="195dp"
+        android:layout_height="59dp"
+        android:background="@drawable/btn"
+        android:fontFamily="casual"
+        android:onClick="quit"
+        android:text="Quit"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.855"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnHelp"
+        android:layout_width="195dp"
+        android:layout_height="59dp"
+        android:background="@drawable/btn"
+        android:fontFamily="casual"
+        android:onClick="help"
+        android:text="Help"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.754" />
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="362dp"
+        android:layout_height="131dp"
+        android:fontFamily="serif-monospace"
+        android:text="Rock Paper Scissors"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.156" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="195dp"
+        android:layout_height="59dp"
+        android:background="@drawable/btn"
+        android:fontFamily="casual"
+
+        android:onClick="start"
+        android:text="Start"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.654" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
