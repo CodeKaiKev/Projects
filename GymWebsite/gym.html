@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href ="style.css"/>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+</head>
+<body style="color: white;">
+   
+    <div class ="header">
+        <h1>Kevin's Fitness HQ</h1>
+        <li style="display:inline"><a href="index.html">Home</a></li>
+        <li style="display:inline"><a href="gym.html">Gym Activty</a></li>
+        <li style="display:inline"><a href="recipes.html">Recipes</a></li>
+        <li style="display:inline"><a href="motivation.html">Motivation</a></li>
+        <li style="display:inline"><a href="workouts.html">Workouts</a></li>
+        
+        
+        <p></p>
+    </div>
+    
+    <div class ="subTitle">
+       <h2>Gym Activity</h2>
+       <p class="paragraph">Enter your gym usage</p>
+        
+    </div>
+    
+    <section class="Enter_Gym_Usage">
+        <form id="gymForm">
+           <div>
+               <label for="userNames" class="col-75">First Name:</label>
+               <input type="text" placeholder="First Name" name="userName" required style="width: 97%"/>
+           </div>
+           
+           <div>
+               <label for="userLNames" class="col-75">Last Name:</label>
+               <input type="text" placeholder="Last Name" name="userLName" required style="width: 97%"/>
+           </div>
+           
+           <div>
+            <label for="gymName" class="col-75">Gym Name:</label>
+            <select id="gymName" name="name" class="col-25">
+              <option value="hammersmith">PureGym Hammersmith</option>
+              <option value="northolt">PureGym Northolt</option>
+              <option value="parkroyal">PureGym Parkroyal</option>
+              <option value="acton">PureGym London Acton</option>
+              <option value="south kensington">PureGym London South Kensington</option>
+            </select>
+            </div>
+            <div>
+                
+                <label for="muscleGroup" class="col-75">Muscle Group :</label>
+                <select id="muscleGroup" name="muscle" class="col-25">
+                  <option value="chest">Chest Day</option>
+                  <option value="legs">Leg Day</option>
+                  <option value="arms">Arms Day</option>
+                  <option value="back">Back Day</option>
+                  <option value="shoulder">Shoulder Day</option>
+                  <option value="shoulder">Cardio</option>
+                </select>
+            </div>
+            <div>
+                <label for="timet" class="col-75">Hours Trained:</label>
+                <select id="timet" name="time" class="col-25">
+                  <option value="0.5">30 Minutes</option>
+                  <option value="1.0">60 Minutes</option>
+                  <option value="1.5">90 Minutes</option>
+                  <option value="2.0">120 Minutes</option>
+                  <option value="2.5">150 Minutes</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="date" class="col-75">Date:</label>
+                <input type="date" id="date" name="date" class="col-25">
+            </div>
+            <P style="color: black">...</P>
+        
+            
+            <button type="submit">Add User</button>
+            <!--
+            <button type="reset">Clear</button>
+            -->
+            
+        </form>
+        
+        <div class="users"></div>
+    </section>
+  
+ <script src="./program.js"></script>
+    
+   
+    
+    
+</body>
+</html>
